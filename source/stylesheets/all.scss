@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 18px !important;
+  font-size: 16px !important;
   line-height: 27px !important;
 }
 
@@ -39,7 +39,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 .slim {
@@ -50,8 +50,22 @@ p {
   color: #003a63;
 }
 
+.light-blue {
+  color: #79BDE9;
+}
+
 .light-green {
   color: #C1D72E;
+}
+
+.clear {
+  clear: both;
+}
+
+.image_border {
+  @include border-radius(3px);
+  padding: 5px;
+  border: solid #cfcfcf 1px;
 }
 
 
@@ -200,5 +214,48 @@ p {
       background: url(../images/contractor-hero.jpg);
     }
   }
+}
 
+
+#dyk-grey {
+  background: image_url('images/dyk-grey.png');
+}
+
+#dyk-blue { 
+  background: image_url('sites/districts/dyk-blue.png');
+}
+
+.dyk {
+  width:260px; 
+  height:318px;
+  position:relative;
+
+  p {
+    padding:130px 25px 20px;
+    font-size: 13px;
+    color: white;
+  }
+}
+
+#dyk-nav {
+  width:260px; 
+  height:30px;
+  position:absolute; 
+  bottom:10px;
+  padding:0 20px;
+
+  i {
+    color: #323232;
+  }
+}
+
+// residential/commerical styles -------------------------------------------------------
+
+.district_site_eligible_properites {
+  .row {
+    margin-bottom: 20px;
+    h4 {
+      font-size: 14px;
+    }
+  }
 }
