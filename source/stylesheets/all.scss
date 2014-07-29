@@ -4,12 +4,29 @@ body {
   background: #cfcfcf !important;
 }
 
+// Bootstrap Overrides -----------------------------------------------
+
 .container {
-  width: 1013px !important;
+  width: 980px !important;
+  padding: 0 !important;
+}
+
+// Utilities --------------------------------------------------------
+.district_page {
+  background: white;
+  padding: 20px;
 }
 
 h1, h2, h3, h4, h5 {
   margin: 0 !important;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 24px !important;
 }
 
 h3 {
@@ -17,8 +34,8 @@ h3 {
   line-height: 27px !important;
 }
 
-h2 {
-  font-size: 24px !important;
+h4 {
+  font-size: 14px;
 }
 
 p {
@@ -37,6 +54,8 @@ p {
   color: #C1D72E;
 }
 
+
+// Header Styles ----------------------------------------------------
 #district_site_header {
 
   .header-grey-box {
@@ -49,19 +68,55 @@ p {
     margin-right: 10px;   
     color: white;
     text-align: center;
+  }
+}
 
-    h4 {
-      font-size: 14px;
+// Footer Styles -------------------------------------------------------------
+#footer_container {
+  border-top: solid #5F6062 10px;
+
+  p {
+    font-size: 13px;
+    font-weight: 200;
+  }
+
+  .footer_blue_left_section {
+    @include background-image(linear-gradient(#0F526F, #00263B));
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    height: 80px;
+    color: white;
+    text-align: center;
+    padding: 30px 40px 0px 40px;
+  }
+
+  .footer_grey_right_section {
+    background: #E3E3E3;
+    padding: 20px;
+    height: 80px;
+
+    p {
+      text-shadow:1px 1px #f9f9f9;
+    }
+
+    a {
+      padding: 10px 20px 10px 20px;
+      border: solid #2F96B4 1px;
+    }
+  }
+
+  .footer_bottom_section {
+    @include background-image(linear-gradient(#0F526F, #00263B));
+    padding: 30px 40px 0px 40px;
+    color: white;
+
+    li {
+      font-weight: 200;
+      font-size: 13px;
     }
   }
 }
 
-.district_page {
-  background: white;
-  padding: 20px;
-
-}
-
+// Homepage Styles ---------------------------------------------------------
 #home_page_container {
 
   .home_page_grey_box {
@@ -81,70 +136,69 @@ p {
       }
     }
   }
-}
+  // Homepage Carousel Styles --------------------------------------------------
 
-// Homepage Carousel Styles --------------------------------------------------
+  #carousel-example-generic {
 
-#carousel-example-generic {
-  width: 980px !important;
+    .slide-content {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 570px;
+    }
 
-  .slide-content {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 570px;
-  }
+    .slide-content-footer-content {
+      position: absolute;
+      bottom: 15px;
+      right: 40px;
 
-  .slide-content-footer-content {
-    position: absolute;
-    bottom: 15px;
-    right: 40px;
+      h3 {
+        font-size: 17px;
+        margin-top: 6px;
+        margin-left: 40px;
+      }
+    }
 
-    h3 {
-      font-size: 17px;
-      margin-top: 6px;
-      margin-left: 40px;
+    .slider-background {
+      height: 301px;
+      width: 100%;
+    }
+
+    .slide-content {
+      color: white;
+      width: 530px;
+      float: right;
+      text-align: right;
+      padding-right: 20px;
+      padding-top: 10px;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .slide-content-footer {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+    }
+
+    #sac-home-slide {
+      background: url(../images/sac-home-slide.jpg);
+    }
+
+    #residential-slide {
+      background: url(../images/residential-hero.jpg);
+    }
+
+    #commerical-slide {
+      background: url(../images/commercial-hero.jpg);
+    }
+
+    #contractor-slide {
+      background: url(../images/contractor-hero.jpg);
     }
   }
 
-  .slider-background {
-    height: 301px;
-    width: 100%;
-  }
-
-  .slide-content {
-    color: white;
-    width: 530px;
-    float: right;
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 10px;
-
-    p {
-      font-size: 14px;
-    }
-  }
-
-  .slide-content-footer {
-    color: white;
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-  }
-
-  #sac-home-slide {
-    background: url(../images/sac-home-slide.jpg);
-  }
-
-  #residential-slide {
-    background: url(../images/residential-hero.jpg);
-  }
-
-  #commerical-slide {
-    background: url(../images/commercial-hero.jpg);
-  }
-
-  #contractor-slide {
-    background: url(../images/contractor-hero.jpg);
-  }
 }

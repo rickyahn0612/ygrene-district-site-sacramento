@@ -1,7 +1,34 @@
+
 #footer_container
-  .container
-    .row
-      .col-xs-4
-        contact
-      .col-xs-8
-        ecerything else
+	.container
+		.col-xs-4.footer_blue_left_section
+			%h2.slim CONTACT US!
+		.col-xs-8.footer_grey_right_section
+			.row
+				.col-xs-9
+					Provide your information to receive our newsletter and get updates on program launch timelines and upcoming events.
+				.col-xs-3
+					%button.btn.btn-info.btn-lg
+						Contact Us
+		.col-xs-12.footer_bottom_section
+			.row
+				.col-xs-3
+					= image_tag 'logo-y.png'
+				.col-xs-2
+					%h3.slim Site Map
+					%ul.list-unstyled
+						%li Home
+						%li Residential
+						%li Commercial
+						%li Contractors
+						%li About
+						%li News
+						%li Contact
+				.col-xs-3
+					%h3.slim More About Ygrene
+					%p To learn more about Ygrene’s turnkey energy efficiency financing solutions, visit ygrene.us or contact us.
+				.col-xs-2.col-xs-offset-1
+					%h3.slim Stay Connected
+					%p Friend us on Facebook, follow us on twitter and join us on LinkedIn!
+
+
