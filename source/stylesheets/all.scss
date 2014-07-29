@@ -1,0 +1,150 @@
+@import 'compass';
+
+body {
+  background: #cfcfcf !important;
+}
+
+.container {
+  width: 1013px !important;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 !important;
+}
+
+h3 {
+  font-size: 18px !important;
+  line-height: 27px !important;
+}
+
+h2 {
+  font-size: 24px !important;
+}
+
+p {
+  font-size: 18px;
+}
+
+.slim {
+  font-weight: 200;
+}
+
+.dark-blue {
+  color: #003a63;
+}
+
+.light-green {
+  color: #C1D72E;
+}
+
+#district_site_header {
+
+  .header-grey-box {
+    @include border-radius(4px);
+    background: rgba(0, 0, 0, 0.5);
+    width: 150px;
+    padding-top: 20px !important;
+    height: 75px !important;
+    border: none !important;
+    margin-right: 10px;   
+    color: white;
+    text-align: center;
+
+    h4 {
+      font-size: 14px;
+    }
+  }
+}
+
+.district_page {
+  background: white;
+  padding: 20px;
+
+}
+
+#home_page_container {
+
+  .home_page_grey_box {
+    background: #F5F5F5;
+    border: solid #E8E8E8 1px;
+    padding: 30px 20px 30px 20px;
+
+    label {
+      display: block;
+    }
+
+    .form-group {
+
+      input {
+        width: 230px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// Homepage Carousel Styles --------------------------------------------------
+
+#carousel-example-generic {
+  width: 980px !important;
+
+  .slide-content {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 570px;
+  }
+
+  .slide-content-footer-content {
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+
+    h3 {
+      font-size: 17px;
+      margin-top: 6px;
+      margin-left: 40px;
+    }
+  }
+
+  .slider-background {
+    height: 301px;
+    width: 100%;
+  }
+
+  .slide-content {
+    color: white;
+    width: 530px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .slide-content-footer {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+
+  #sac-home-slide {
+    background: url(../images/sac-home-slide.jpg);
+  }
+
+  #residential-slide {
+    background: url(../images/residential-hero.jpg);
+  }
+
+  #commerical-slide {
+    background: url(../images/commercial-hero.jpg);
+  }
+
+  #contractor-slide {
+    background: url(../images/contractor-hero.jpg);
+  }
+}
