@@ -1,135 +1,136 @@
-.container
-	#footer_container
-		.container
-			.col-xs-4.footer_blue_left_section
-				%h2.slim CONTACT US!
-			.col-xs-8.footer_grey_right_section
-				.row
-					.col-xs-9
-						Provide your information to receive our newsletter and get updates on program launch timelines and upcoming events.
-					.col-xs-3
-						%button.btn.btn-info.btn-lg
-							Contact Us
-	.district_page
-		%h3.slim.light-blue FOR HOMEOWNERS
-		%h1.slim.dark-blue IT'S SIMPLE. IT'S SMART. IT'S AFFORDABLE.
-		.row 
-			.col-xs-8
-				= image_tag 'res-how-it-works.png'
-			.col-xs-4
-				#dyk-grey.dyk.carousel
-					.carousel-inner
-						.item.active
-						%p.font-14.white
-							60% of a home’s air comes from the crawl space? Poor indoor air quality
-							has been linked to various chronic health concerns, such as asthma, headaches,
-							fatigue, and respiratory inflammation.
-						.item
-							%p.font-14.white
-								Installing solar panels on your home can reduce your electricity bill by up to 80%?
-						.item
-							%p.font-14.white
-								Energy-efficient homes sell for nearly 10% more than their non-efficient neighbors?
-					#dyk-nav.clearfix
-						%a.pull-left{"data-slide" => "prev", href: "#dyk-grey"}
-							%i.glyphicon.glyphicon-arrow-left
-						%a.pull-right{"data-slide" => "next", href: "#dyk-grey"}
-							%i.glyphicon.glyphicon-arrow-right
-		%hr
-		.row
-			.col-xs-9
-				%h2.dark-blue Make your home safer, healthier and more efficient
-				%p Enjoy the many benefits of an efficient home with no out-of-pocket costs.
-		.row
-			.col-xs-6
-				.row
-					.col-xs-12
-						= image_tag 'check-box.png', class: 'pull-left'
-						%h3.pull-left Lower your utility bills
-						%br
-						%br
-						= image_tag 'check-box.png', class: 'pull-left'
-						%h3.pull-left Increase your home's value
+#district_site_residential
+	.container
+		#footer_container
+			.container
+				.col-xs-4.footer_blue_left_section
+					%h2.white-font CONTACT US!
+				.col-xs-8.footer_grey_right_section
+					.row
+						.col-xs-9
+							Provide your information to receive our newsletter and get updates on program launch timelines and upcoming events.
+						.col-xs-3
+							%button.btn.btn-info.btn-lg
+								Contact Us
+		.district_page
+			%h3.light-blue FOR HOMEOWNERS
+			%h1.slim IT'S SIMPLE. IT'S SMART. IT'S AFFORDABLE.
+			.row 
+				.col-xs-8
+					= image_tag 'res-how-it-works.png'
+				.col-xs-4
+					#dyk-grey.dyk.carousel
+						.carousel-inner
+							.item.active
+							%p
+								60% of a home’s air comes from the crawl space? Poor indoor air quality
+								has been linked to various chronic health concerns, such as asthma, headaches,
+								fatigue, and respiratory inflammation.
+							.item
+								%p
+									Installing solar panels on your home can reduce your electricity bill by up to 80%?
+							.item
+								%p
+									Energy-efficient homes sell for nearly 10% more than their non-efficient neighbors?
+						#dyk-nav.clearfix
+							%a.pull-left{"data-slide" => "prev", href: "#dyk-grey"}
+								%i.glyphicon.glyphicon-arrow-left
+							%a.pull-right{"data-slide" => "next", href: "#dyk-grey"}
+								%i.glyphicon.glyphicon-arrow-right
+			%hr
+			.row
+				.col-xs-9
+					%h2 Make your home safer, healthier and more efficient
+					%p Enjoy the many benefits of an efficient home with no out-of-pocket costs.
+			.row
+				.col-xs-6
+					.row
+						.col-xs-12
+							= image_tag 'check-box.png', class: 'pull-left'
+							%h3.pull-left Lower your utility bills
+							%br
+							%br
+							= image_tag 'check-box.png', class: 'pull-left'
+							%h3.pull-left Increase your home's value
 
-			.col-xs-6
-				.row
-					.col-xs-12
-						= image_tag 'check-box.png', class: 'pull-left'
-						%h3.pull-left Help the environment
-						%br
-						%br
-						= image_tag 'check-box.png', class: 'pull-left'
-						%h3.pull-left Improve the air quality and comfort of your home
-		%hr
-		.row
-			.col-xs-9
-				%h2.dark-blue Eligible Properties
-				%p Residential properties eligible to participate:
-		.row
-			.col-xs-4
-				= image_tag 'single-family.gif', class: 'image_border'
-				%h3.dark-blue Single Family Residential
-				%p 
-					Single family residential properties in the City of Sacramento are now eligible!
-			.col-xs-4
-				= image_tag 'single-family.gif', class: 'image_border'
-				%h3.dark-blue Multi Family Residential (up to 4 units)
-				%p 
-					Multi family residential properties less than 5 units can participate as residential properties.
-			.col-xs-4
-				= image_tag 'single-family.gif', class: 'image_border'
-				%h3.dark-blue Condominiums
-				%p 
-					Condominiums are also eligible depending on the ownership structure and HOA rules. In some cases multiplex residential is considered to be a commercial property.
-		%hr
-		.row
-			.col-xs-9
-				%h2.dark-blue Eligible Projects
-				%p Energy efficiency, renewable energy and water efficiency improvements of all types are eligible for financing.
-			.col-xs-3
-				%button.btn.btn-default
-					Download Full List
-		.row.district_site_eligible_properites
-			.col-xs-6
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
-	
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+				.col-xs-6
+					.row
+						.col-xs-12
+							= image_tag 'check-box.png', class: 'pull-left'
+							%h3.pull-left Help the environment
+							%br
+							%br
+							= image_tag 'check-box.png', class: 'pull-left'
+							%h3.pull-left Improve the air quality and comfort of your home
+			%hr
+			.row
+				.col-xs-9
+					%h2 Eligible Properties
+					%p Residential properties eligible to participate:
+			.row
+				.col-xs-4
+					= image_tag 'single-family.gif', class: 'image_border'
+					%h3 Single Family Residential
+					%p 
+						Single family residential properties in the City of Sacramento are now eligible!
+				.col-xs-4
+					= image_tag 'single-family.gif', class: 'image_border'
+					%h3 Multi Family Residential (up to 4 units)
+					%p 
+						Multi family residential properties less than 5 units can participate as residential properties.
+				.col-xs-4
+					= image_tag 'single-family.gif', class: 'image_border'
+					%h3 Condominiums
+					%p 
+						Condominiums are also eligible depending on the ownership structure and HOA rules. In some cases multiplex residential is considered to be a commercial property.
+			%hr
+			.row
+				.col-xs-9
+					%h2 Eligible Projects
+					%p Energy efficiency, renewable energy and water efficiency improvements of all types are eligible for financing.
+				.col-xs-3
+					%button.btn.btn-default
+						Download Full List
+			.row.district_site_eligible_properites
+				.col-xs-6
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+		
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
 
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
 
-			.col-xs-6
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+				.col-xs-6
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
 
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
 
-				.row
-					.col-xs-3
-						= image_tag 'insulation.jpg', class: 'image_border'
-					.col-xs-9
-						%h4.dark-blue Envelope &amp; Insulation
-						%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.
+					.row
+						.col-xs-3
+							= image_tag 'insulation.jpg', class: 'image_border'
+						.col-xs-9
+							%h4 Envelope &amp; Insulation
+							%p Ensure that your home's envelope is sealed tight. Add or replace insulation in the roof, walls and floors to slow the transfer of heat.

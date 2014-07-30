@@ -17,6 +17,18 @@ body {
   padding: 20px;
 }
 
+@mixin dark-blue {
+  color: #003a63;
+}
+
+@mixin light-green {
+  color: #C1D72E;
+}
+
+@mixin light-blue {
+  color: #79BDE9;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0 !important;
 }
@@ -133,10 +145,31 @@ p {
 // Homepage Styles ---------------------------------------------------------
 #home_page_container {
 
+  .top-header {
+
+    h1 {
+      @include dark-blue;
+      font-weight: 200;
+    }
+
+    h3 {
+      @include light-green;
+      font-weight: 200;
+    }
+  }
+
   .home_page_grey_box {
     background: #F5F5F5;
     border: solid #E8E8E8 1px;
     padding: 30px 20px 30px 20px;
+
+    h3 {
+      @include dark-blue;
+    }
+
+    p {
+      @include dark-blue;
+    }
 
     label {
       display: block;
@@ -153,6 +186,14 @@ p {
   // Homepage Carousel Styles --------------------------------------------------
 
   #carousel-example-generic {
+
+    h2 {
+      @include dark-blue;
+    }
+
+    h2.white_header {
+      color: white;
+    }
 
     .slide-content {
       position: absolute;
@@ -250,12 +291,35 @@ p {
 }
 
 // residential/commerical styles -------------------------------------------------------
+#district_site_residential_and_commercial {
 
-.district_site_eligible_properites {
-  .row {
-    margin-bottom: 20px;
-    h4 {
-      font-size: 14px;
+  h1, h2, h3, h4 {
+    @include dark-blue;
+  }
+
+  h2.white-font {
+    color: white;
+    font-weight: 200;
+  }
+
+  h3.light-blue {
+    color: #79BDE9;
+    font-weight: 200;
+  }
+
+  .commercial-checklist {
+    h3 {
+      font-size: 15px !important;
+    }
+  }
+
+  .district_site_eligible_properites {
+
+    .row {
+      margin-bottom: 20px;
+      h4 {
+        font-size: 14px;
+      }
     }
   }
 }
