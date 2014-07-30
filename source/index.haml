@@ -11,23 +11,31 @@
       %hr
       %p
         <strong>Clean Energy Sacramento</strong>, managed and funded by Ygrene, provides 100% financing to commercial and residential property owners for energy efficiency, renewable energy, and water conservation improvements. Financing is repayable over the long term through your property tax bill.
+      %br
       .home_page_grey_box
         %p Enter your address to see if you qualify!
-        %form.form-inline
-          .form-group
-            %label Address
-            %input.form-control{placeholder: 'Address'}
-          .form-group
-            %label City
-            %input.form-control{placeholder: 'Address'}
-          .form-group
-            %label Zipcode
-            %input.form-control{placeholder: 'Zip', style: 'width: 100px;'}
-          .form-group
-            %label Email
-            %input.form-control{placeholder: 'Address'}
-            %button.btn.btn-success
-              Search
+        %br
+        %form
+          .row
+            .col-xs-3
+              .form-group
+                %label Address
+                %input.form-control{placeholder: 'Address'}
+            .col-xs-3
+              .form-group
+                %label City
+                %input.form-control{placeholder: 'City'}
+            .col-xs-1
+              .form-group
+                %label Zipcode
+                %input.form-control{placeholder: 'Zip', style: 'width: 100px;'}
+            .col-xs-3
+              .form-group{style: 'margin-left: 25px;'}
+                %label Email
+                %input.form-control{placeholder: 'Address'}
+            .col-xs-2
+              %button.btn.btn-success.pull-right{style: 'position: relative; top: 25px;'}
+                Search
     #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
       / Indicators
       %ol.carousel-indicators
